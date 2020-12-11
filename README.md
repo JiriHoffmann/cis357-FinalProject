@@ -34,11 +34,12 @@ This guide will show you all the steps to get your app uploaded to both Google P
     - [Almost ready](#almost-ready)
 
 
-## Google Play
+
+## ![GP_icon](https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/google_play_icon.png?raw=true) Google Play
 
 ### Creating developer account
 
-Creating a new developer account is the first and required step to publishing your app on Google Play store. This used to be free, but now Google charges a 25$ registration fee. Start your registration **[here][register-play-console]**.
+Creating a new developer account is the first and required step to publishing your app on Google Play store. This used to be free, but now Google charges a 25$ registration fee. Start your registration <strong>[here][register-play-console]</strong>.
 
 [register-play-console]: https://play.google.com/console/signup
 
@@ -112,7 +113,7 @@ Android app bundles are preferred over apk. Bundles allow Google Play to serve i
 
 ### App singing
 
-The way app signing works on Android is that developers have to generate a ***signing key*** and use it to sign the app. The key has to be consistent across the entire app’s lifetime to ensure all updates are coming from the same developers. This obviously caused many issues if the key was lost as there was no way of recovering it. So Google decided to refactor how signing works. There is now an opt in feature which let’s developers sign the apk with their ***upload key***. The ***upload key*** works the same way as the ***signing key*** but it’s only used to upload the app to Google Play. Google then generates its own ***signing key*** and uses it to re-sign the app and stores it in their database. The added benefit of this approach is that developers can generate a new upload key if lost and the app will remain signed with the same key. I recommend reading more on this topic **[here][app-signing]**.
+The way app signing works on Android is that developers have to generate a ***signing key*** and use it to sign the app. The key has to be consistent across the entire app’s lifetime to ensure all updates are coming from the same developers. This obviously caused many issues if the key was lost as there was no way of recovering it. So Google decided to refactor how signing works. There is now an opt in feature which let’s developers sign the apk with their ***upload key***. The ***upload key*** works the same way as the ***signing key*** but it’s only used to upload the app to Google Play. Google then generates its own ***signing key*** and uses it to re-sign the app and stores it in their database. The added benefit of this approach is that developers can generate a new upload key if lost and the app will remain signed with the same key. I recommend reading more on this topic <strong>[here][app-signing]</strong>.
 
 [app-signing]: https://github.com/facebook/react-native/blob/master/LICENSE-docs
 
@@ -137,7 +138,8 @@ Now that you have generated a signed app, go back to the Google Play Console web
 
 
 
-## App Store
+## ![AS_icon](https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/app_store_icon.png?raw=true) App Store
+ 
 
 To be able to share your apps on the App Store, each user has to join Apple Developer Program first. In order to do so, you have to enroll either as an individual or as an organization. For organizations it becomes a little bit more complicated from the legal side, but as an individual you only need an Apple ID with two-factor authentication enabled. 
 
