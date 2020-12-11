@@ -6,7 +6,7 @@ This guide will show you all the steps to get your app uploaded to both Google P
 
 ## Contents
 
- -  <strong> [Google Play](#google-play) </strong>
+ -  **[Google Play](#google-play)**
     - [Creating a developer account](#creating-developer-account)
     - [Creating the app](#creating-the-app)
     - [App access](#app-access)
@@ -21,7 +21,7 @@ This guide will show you all the steps to get your app uploaded to both Google P
     - [Uploading to Google Play](#uploading-to-google-play)
 <span> </p>
 
-- <strong> [App Store](#app-store) </strong>
+- **[App Store](#app-store)**
     - [App publishing](#app-publishing)
     - [Version Information](#version-information)
     - [App Clip](#app-clip)
@@ -38,7 +38,7 @@ This guide will show you all the steps to get your app uploaded to both Google P
 
 ### Creating developer account
 
-Creating a new developer account is the first and required step to publishing your app on Google Play store. This used to be free, but now Google charges a 25$ registration fee. Start your registration [here][register-play-console].
+Creating a new developer account is the first and required step to publishing your app on Google Play store. This used to be free, but now Google charges a 25$ registration fee. Start your registration **[here][register-play-console]**.
 
 [register-play-console]: https://play.google.com/console/signup
 
@@ -47,7 +47,7 @@ Creating a new developer account is the first and required step to publishing yo
 </p>
 
 ### Creating the app
-We will start out by creating the app and adding some basic information about it. While you are able to change any information in here, you should know, that it is possible to change a paid app to free but a <strong>free app cannot be changed to paid</strong>.
+We will start out by creating the app and adding some basic information about it. While you are able to change any information in here, you should know, that it is possible to change a paid app to free but a **free app cannot be changed to paid**.
 
 <p align="center">
   <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/create_app_GPC.png?raw=true" />
@@ -112,7 +112,7 @@ Android app bundles are preferred over apk. Bundles allow Google Play to serve i
 
 ### App singing
 
-The way app signing works on Android is that developers have to generate a `signing key` and use it to sign the app. The key has to be consistent across the entire app’s lifetime to ensure all updates are coming from the same developers. This obviously caused many issues if the key was lost as there was no way of recovering it. So Google decided to refactor how signing works. There is now an opt in feature which let’s developers sign the apk with their `upload key`. The `upload key` works the same way as the `signing key` but it’s only used to upload the app to Google Play. Google then generates its own `signing key` and uses it to re-sign the app and stores it in their database. The added benefit of this approach is that developers can generate a new upload key if lost and the app will remain signed with the same key. I recommend reading more on this topic [here][app-signing].
+The way app signing works on Android is that developers have to generate a ***signing key*** and use it to sign the app. The key has to be consistent across the entire app’s lifetime to ensure all updates are coming from the same developers. This obviously caused many issues if the key was lost as there was no way of recovering it. So Google decided to refactor how signing works. There is now an opt in feature which let’s developers sign the apk with their ***upload key***. The ***upload key*** works the same way as the ***signing key*** but it’s only used to upload the app to Google Play. Google then generates its own ***signing key*** and uses it to re-sign the app and stores it in their database. The added benefit of this approach is that developers can generate a new upload key if lost and the app will remain signed with the same key. I recommend reading more on this topic **[here][app-signing]**.
 
 [app-signing]: https://github.com/facebook/react-native/blob/master/LICENSE-docs
 
@@ -132,116 +132,56 @@ The easiest way to generate a key is by using Android Studio.
 
 ### Uploading to Google Play
 
-Now that you have generated a signed app, go back to the Google Play Console website. First, if you would like to let Google generate and store the signing key hit Continue and upload the .aab or .apk file. After that click on Review release. Next up, you can see all the errors and warnings for the current release. For example, my app uses the camera so I have to go back and add a Privacy Policy. If there aren’t any warnings you are all set to hit `Start rollout to Production`. Be sure your app is ready to be released! This will send the app for a review to Google. Once the review is done you can finally publish the app and let other users download it!
+Now that you have generated a signed app, go back to the Google Play Console website. First, if you would like to let Google generate and store the signing key hit Continue and upload the .aab or .apk file. After that click on Review release. Next up, you can see all the errors and warnings for the current release. For example, my app uses the camera so I have to go back and add a Privacy Policy. If there aren’t any warnings you are all set to hit ***Start rollout to Production***. Be sure your app is ready to be released! This will send the app for a review to Google. Once the review is done you can finally publish the app and let other users download it!
 
 
 
 
 ## App Store
 
-In order to be able to share your apps on the App Store, each user has to join Apple Developer Program first. In order to do so you have to enroll either as an individual or as an organization. For organizations it becomes a little bit more complicated from the legal side, but as an individual you only need an Apple ID with two-factor authentication enabled. An important note is that Apple charges $99 yearly, which is much higher than Google's $25 one time application fee. But just like Google, Apple will provide you with all the tools needed to get the app ready for production before having to register as a developer. 
+To be able to share your apps on the App Store, each user has to join Apple Developer Program first. In order to do so, you have to enroll either as an individual or as an organization. For organizations it becomes a little bit more complicated from the legal side, but as an individual you only need an Apple ID with two-factor authentication enabled. 
 
-Go to: https://developer.apple.com/ where you can read more about the benefits of being a developer. Once you are ready hit Enroll in the upper right corner to get started.
+<p align="center">
+  <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/entity_type_ASC.png?raw=true" />
+</p>
 
+An important note is that Apple charges \$99 yearly, which is much higher than Google's \$25 one time application fee. But just like Google, Apple will provide you with all the tools needed to get the app ready for production before having to register as a developer. 
 
+Go to: **https://developer.apple.com/**, where you can read more about the benefits of being a developer. Once you are ready hit ***Enroll*** in the upper right corner to get started.
 
+<p align="center">
+  <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/create_account_ASC.png?raw=true" />
+</p>
 
-
-First off you will have to fill out some basic information.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Next, you have to select the entity type and then continue with the membership fee payment.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+First off you will have to fill out some basic information. Then, you have to select the entity type and then continue with the membership fee payment.
 
 ### App publishing
 
-Once the registration process is complete, you are ready to start with the app publishing process. In order to do so, go to App Store Connect. Start with clicking on the “+”, then New App and fill out the information. 
+Once the registration process is complete, you are ready to start with the app publishing process. In order to do so, go to App Store Connect. Start with clicking on the `+` , then ***New App*** and fill out the information.
 
+<p align="center">
+  <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/create_app_ASC.png?raw=true" />
+</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-If you don’t have a bundle ID click on the link and register a new App ID. Also, notice that User Access is meant for users within your organisation and not the app users. Once you hit Create a new app entry will be created. 
+If you don’t have a bundle ID click on the link and register a new App ID. Also, notice that ***User Access*** is meant for users within your organisation and not the app users. Once you hit ***Create*** a new app entry will be created. 
 
 
 ### Version Information
 
 
-The main dashboard for the app will show up. The first step is uploading screenshots that will be used on the App Store. I recommend using any Pro Max version of the simulator to take 6.5” screenshots and iPhone 8 Plus for 5.5” as they have the exact required resolution and any other screenshots will not be accepted without size adjustments. If the app supports iPads and looks different you should also include screenshots for them, but they are not required for the app submission.
+The main dashboard for the app will show up. The first step is uploading screenshots that will be used on the App Store. I recommend using the simulator with the following settings:
 
-Next up there are a couple of text fields that provide basic information for the App Store listing and all of them should be pretty self explanatory.
+- *Pro Max version to take 6.5” screenshots*
+- *iPhone 8 Plus for 5.5"*
+
+They have the **exact** required resolution and any other screenshots will **not** be accepted without size adjustments. If the app supports iPads and looks different you should also include screenshots for them, but they are not required for the app submission only 6.5" and 5.5" must be included. 
+
+<p align="center">
+  <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/upload_screenshots_ASC.png?raw=true" />
+</p>
+
+
+Next up there are a couple of text fields that provide basic information for the App Store listing and all of them should be pretty self explanatory. The ***Promotional Text*** will most likely not be used for the first release, but it is the only field that can be updated without requiring a new submission review.
 
 ### App Clip
 
@@ -258,53 +198,42 @@ Also self explanatory, this is where you upload apps for the Apple Watch.
 
 ### Build 
 
-The uploaded app build will show up here. Apple provides multiple ways to upload but the easiest and most seamless one is through Xcode. Once you are ready go to Xcode and follow these steps.
+The uploaded app build will show up here. Apple provides multiple ways to upload but the easiest and most seamless one is through ***Xcode***. You can follow these steps:
 
-In the top build menu select Any iOS device
+1. In the top build menu select ***Any iOS device***
 
-
-
-Under Product select Archive and let XCode build the archive.
-
-
+<p align="center">
+  <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/build_type_ASC.png?raw=true" />
+</p>
 
 
+2. Under Product select ***Archive*** and let Xcode build the archive.
 
+<p align="center">
+  <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/archive_ASC.png?raw=true" />
+</p>
 
+3. Once it’s done a new window will pop up with all your archives for the app. Select the archive and click ***Distribute App***.
+4. Select options and continue through the signing process
+5. When that’s finished you should be able to refresh your ***App Store Connect*** page and the build will show up. (This might take a couple of minutes)
 
-
-
-
-
- 
-
-
-
- 
-
- 
-
-Once it’s done a new window will pop up with all your archives for the app. Select the archive and click Distribute App.
-Select options and continue through the signing process
-When that’s finished you should be able to refresh your App Store Connect page and the build will show up. (This might take a couple of minutes)
-
-Uploading the archive will also allow you to test it out the release version of the app through TestFlight. More information can be found in the TestFlight tab at the top of the App Store Connect website.
+Uploading the archive will also allow you to test it out the release version of the app through ***TestFlight***. More information can be found in the dedicated tab at the top of the ***App Store Connect*** website.
 
 ### General App Information
 
 
-Uploading the build should fill out some of the text fields in this tab as well as add an icon for the App Store, the rest has to be filled out manually.
+Uploading the build will fill out some of the text fields like the version as well as add an icon for the App Store, the rest has to be filled out manually.
 
 ### App Review Information
 
-An important step to get your app review approved. You will need to provide additional contact information in case there are any further questions during the review process. Also if the app requires users to login you will have to provide some login credentials.
+An important step to get your app review approved. You will need to provide additional contact information in case there are any further questions during the review process. Also, if the app requires users to login you will have to provide some login credentials.
 
 ### Version Release
 
-Just like Google, Apple provides developers with scheduled releases, although Google allows more fine-tuning in this case. So this and following parts give you options to select when and how the new app/version will be released once the review is approved.
+Just like Google, Apple provides developers with ***scheduled releases***, although Google allows more fine-tuning in this case. So this and following parts give you options to select when and how the new app/version will be released once the review is approved.
 
 ### Almost ready
 
-Now that you have most of the submission form filled out, you will have to check some of the other tabs on the left side. For the first release, the most important one is App privacy, as it is a requirement to provide a privacy policy. Then check out Pricing and Availability to select both country and device availability as well as pricing if the app is not free. With all these steps done you are most likely to submit the app. Hit the App Store tab and you should see a blue Submit for Review button. If you missed any parts you will see a red error box telling you what else you need to do. That’s it! 
+Now that you have most of the submission form filled out, you will have to check some of the other tabs on the left side. For the first release, the most important one is ***App privacy***, as it is a requirement to provide a privacy policy. Then check out ***Pricing and Availability*** to select both country and device availability as well as pricing if the app is not free. With all these steps done you are most likely to submit the app. Hit the ***App Store*** tab and you should see a blue ***Submit for Review*** button. If you missed any parts you will see a red error box telling you what else you need to do. 
 
-
+**And... That’s it!** 
