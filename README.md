@@ -2,7 +2,7 @@
 
 ## Submitting apps to Google Play and App Store
 
-This guide will show you all the steps to get your app uploaded to both Google Play and App Store. It is assumed that at this point your app is mostly ready to be distributed to users via the stores. The reason behind this is because adding and removing feature might require you to make changes to your store listings and it's much easier to do it all at once, instead of having to search though the settings and re-doing it.
+This guide will show you all the steps to get your app uploaded to both Google Play and App Store. It is assumed that at this point your app is mostly ready to be distributed to users via the stores. The reason behind this is because adding and removing features might require you to make changes to your store listings and it's much easier to do it all at once, instead of having to search through the settings and re-doing it.
 
 ## Contents
 
@@ -37,9 +37,9 @@ This guide will show you all the steps to get your app uploaded to both Google P
 
 ## ![GP_icon](https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/google_play_icon.png?raw=true) Google Play
 
-### Creating developer account
+### Creating a developer account
 
-Creating a new developer account is the first and required step to publishing your app on Google Play store. This used to be free, but now Google charges a 25$ registration fee. Start your registration <strong>[here][register-play-console]</strong>.
+Creating a new developer account is the first and required step to publishing your app on Google Play store. This used to be free, but now Google charges a $25 registration fee. Start your registration <strong>[here][register-play-console]</strong>.
 
 [register-play-console]: https://play.google.com/console/signup
 
@@ -56,7 +56,7 @@ You will start out by creating the app and adding some basic information about i
 
 
 
-Now, that you have created the app, you will be redirected to the dashboard, which provides easy access to all of the features and settings provided by the Google Play Console. On the dashboard you can see the `Set up your app` tab which is the first required step to be completed before the app can be published.
+Now, that you have created the app, you will be redirected to the dashboard, which provides easy access to all of the features and settings provided by the Google Play Console. On the dashboard, you can see the ***Set up your app*** tab which is the first required step to be completed before the app can be published.
 
 <p align="center">
   <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/set_up_app_GPC.png?raw=true" />
@@ -64,13 +64,13 @@ Now, that you have created the app, you will be redirected to the dashboard, whi
 
 ### App access
 
-In the first step you will be letting Google know if all users can access all of the app’s features or if some of them are limited with a registration or some other form of account creation mechanism. Apps with restricted access require a brief description on how all of it's content can be accessed.
+In the first step, you will be letting Google know if all users can access all of the app’s features or if some of them are limited with registration or some other form of account creation mechanism. Apps with restricted access require a brief description of how all of its content can be accessed.
 
 
 
 ### Content rating
 
-Content rating is a short questionnaire about the content of the app. First developers are asked select one of the provided categories which best describes the functionality of the app. This will be followed by a couple of questions based on the category selected in the previous question and then you can see how the app will be rated in different countries. The questionare can be filled out again at any time in case the content of the app changes.
+Content rating is a short questionnaire about the content of the app. First developers are asked to select one of the provided categories which best describes the functionality of the app. This will be followed by a couple of questions based on the category selected in the previous question and then you can see how the app will be rated in different countries. The questionnaire can be filled out again at any time in case the content of the app changes.
 
 
 ### Target audience
@@ -85,7 +85,7 @@ Just a quick confirmation if the app is a news app or not, due to terms of servi
 
 ### Selecting app category
 
-This tab focuses on discoverability of the app. You will be adding a category where the app can be found and tags to help improve organic searching as well as some additional contact information in case there are any additional questions during the review.
+This tab focuses on the discoverability of the app. You will be adding a category where the app can be found and tags to help improve organic searching as well as some additional contact information in case there are any additional questions during the review.
 
 
 ### Store listing
@@ -106,14 +106,14 @@ Once all these steps are done, the app is almost ready to be published. Google a
   <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/publish_app_GPC.png?raw=true" />
 </p>
 
-First off, you will have select countries where the app will be available. Then, you will be returning back to Android Studio to generate a signed apk or Android app bundle. 
+First off, you will have to select countries where the app will be available. Then, you will be returning back to Android Studio to generate a signed apk or Android app bundle. 
 
 Android app bundles are preferred over apk. Bundles allow Google Play to serve individual apks to users based on their device configuration such as processor architecture or assets depending on the screen resolution.
 
 
 ### App singing
 
-The way app signing works on Android is that developers have to generate a ***signing key*** and use it to sign the app. The key has to be consistent across the entire app’s lifetime to ensure all updates are coming from the same developers. This obviously caused many issues if the key was lost as there was no way of recovering it. So Google decided to refactor how signing works. There is now an opt in feature which let’s developers sign the apk with their ***upload key***. The ***upload key*** works the same way as the ***signing key*** but it’s only used to upload the app to Google Play. Google then generates its own ***signing key*** and uses it to re-sign the app and stores it in their database. The added benefit of this approach is that developers can generate a new upload key if lost and the app will remain signed with the same key. I recommend reading more on this topic <strong>[here][app-signing]</strong>.
+The way app signing works on Android is that developers have to generate a ***signing key*** and use it to sign the app. The key has to be consistent across the entire app’s lifetime to ensure all updates are coming from the same developers. This obviously caused many issues if the key was lost as there was no way of recovering it. So Google decided to refactor how signing works. There is now an opt in feature which lets developers sign the apk with their ***upload key***. The ***upload key*** works the same way as the ***signing key*** but it’s only used to upload the app to Google Play. Google then generates its own ***signing key*** and uses it to re-sign the app and stores it in their database. The added benefit of this approach is that developers can generate a new upload key if it's lost and the app will remain signed with the same key. I recommend reading more on this topic <strong>[here][app-signing]</strong>.
 
 [app-signing]: https://github.com/facebook/react-native/blob/master/LICENSE-docs
 
@@ -133,7 +133,7 @@ The easiest way to generate a key is by using Android Studio.
 
 ### Uploading to Google Play
 
-Now that you have generated a signed app, go back to the Google Play Console website. First, if you would like to let Google generate and store the signing key hit Continue and upload the .aab or .apk file. After that click on Review release. Next up, you can see all the errors and warnings for the current release. For example, my app uses the camera so I have to go back and add a Privacy Policy. If there aren’t any warnings you are all set to hit ***Start rollout to Production***. Be sure your app is ready to be released! This will send the app for a review to Google. Once the review is done you can finally publish the app and let other users download it!
+Now that you have generated a signed app, go back to the Google Play Console website. First, if you would like to let Google generate and store the signing key hit Continue and upload the .aab or .apk file. After that, click on ***Review release***. Next up, you can see all the errors and warnings for the current release. For example, my app uses the camera so I have to go back and add a Privacy Policy. If there aren’t any warnings you are all set to hit ***Start rollout to Production***. Be sure your app is ready to be released! This will send the app for a review to Google. Once the review is done you can finally publish the app and let other users download it!
 
 
 
@@ -141,13 +141,13 @@ Now that you have generated a signed app, go back to the Google Play Console web
 ## ![AS_icon](https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/app_store_icon.png?raw=true) App Store
  
 
-To be able to share your apps on the App Store, each user has to join Apple Developer Program first. In order to do so, you have to enroll either as an individual or as an organization. For organizations it becomes a little bit more complicated from the legal side, but as an individual you only need an Apple ID with two-factor authentication enabled. 
+To be able to share your apps on the App Store, each user has to join Apple Developer Program first. In order to do so, you have to enroll either as an individual or as an organization. For organizations, it becomes a little bit more complicated from the legal side, but as an individual you only need an Apple ID with two-factor authentication enabled. 
 
 <p align="center">
   <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/entity_type_ASC.png?raw=true" />
 </p>
 
-An important note is that Apple charges \$99 yearly, which is much higher than Google's \$25 one time application fee. But just like Google, Apple will provide you with all the tools needed to get the app ready for production before having to register as a developer. 
+An important note is that Apple charges \$99 yearly, which is much higher than Google's \$25 one-time application fee. But just like Google, Apple will provide you with all the tools needed to get the app ready for production before having to register as a developer. 
 
 Go to: **https://developer.apple.com/**, where you can read more about the benefits of being a developer. Once you are ready hit ***Enroll*** in the upper right corner to get started.
 
@@ -155,13 +155,13 @@ First off you will have to fill out some basic information. Then, you have to se
 
 ### App publishing
 
-Once the registration process is complete, you are ready to start with the app publishing process. In order to do so, go to App Store Connect. Start with clicking on the `+` , then ***New App*** and fill out the information.
+Once the registration process is complete, you are ready to start with the app publishing process. In order to do so, go to App Store Connect. Start with clicking on the `+`, then ***New App*** and fill out the information.
 
 <p align="center">
   <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/create_app_ASC.png?raw=true" />
 </p>
 
-If you don’t have a bundle ID click on the link and register a new App ID. Also, notice that ***User Access*** is meant for users within your organisation and not the app users. Once you hit ***Create*** a new app entry will be created. 
+If you don’t have a bundle ID, click on the link, and register a new App ID. Also, notice that ***User Access*** is meant for users within your organization and not the app users. Once you hit ***Create*** a new app entry will be created. 
 
 
 ### Version Information
@@ -179,7 +179,7 @@ They have the **exact** required resolution and any other screenshots will **not
 </p>
 
 
-Next up there are a couple of text fields that provide basic information for the App Store listing and all of them should be pretty self explanatory. The ***Promotional Text*** will most likely not be used for the first release, but it is the only field that can be updated without requiring a new submission review.
+Next up there are a couple of text fields that provide basic information for the App Store listing and all of them should be pretty self-explanatory. The ***Promotional Text*** will most likely not be used for the first release, but it is the only field that can be updated without requiring a new submission review.
 
 ### App Clip
 
@@ -228,10 +228,10 @@ An important step to get your app review approved. You will need to provide addi
 
 ### Version Release
 
-Just like Google, Apple provides developers with ***scheduled releases***, although Google allows more fine-tuning in this case. So this and following parts give you options to select when and how the new app/version will be released once the review is approved.
+Just like Google, Apple provides developers with ***scheduled releases***, although Google allows more fine-tuning in this case. So this and the following parts give you options to select when and how the new app/version will be released once the review is approved.
 
 ### Almost ready
 
 Now that you have most of the submission form filled out, you will have to check some of the other tabs on the left side. For the first release, the most important one is ***App privacy***, as it is a requirement to provide a privacy policy. Then check out ***Pricing and Availability*** to select both country and device availability as well as pricing if the app is not free. With all these steps done you are most likely to submit the app. Hit the ***App Store*** tab and you should see a blue ***Submit for Review*** button. If you missed any parts you will see a red error box telling you what else you need to do. 
 
-**And... That’s it!** 
+**And... That’s it!**  :tada::balloon::tada:
