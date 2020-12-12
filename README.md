@@ -4,6 +4,11 @@
 
 This guide will show you all the steps to get your app uploaded to both Google Play and App Store. It is assumed that at this point your app is mostly ready to be distributed to users via the stores. The reason behind this is because adding and removing features might require you to make changes to your store listings and it's much easier to do it all at once, instead of having to search through the settings and re-doing it.
 
+Before getting started you should know that all information provided here is my interpretation of the documentation and the submission process. If you are not sure about a certain setting, go check out there official documentation, where you can find much more in depth explanations and much more!
+
+Google Play Console: https://support.google.com/googleplay/android-developer/
+App Store Connect: https://help.apple.com/app-store-connect/
+
 ## Contents
 
  -  **[Google Play](#google-play)**
