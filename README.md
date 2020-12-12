@@ -48,7 +48,7 @@ Creating a new developer account is the first and required step to publishing yo
 </p>
 
 ### Creating the app
-We will start out by creating the app and adding some basic information about it. While you are able to change any information in here, you should know, that it is possible to change a paid app to free but a **free app cannot be changed to paid**.
+You will start out by creating the app and adding some basic information about it. While you are able to change any information in here, you should know, that it is possible to change a paid app to free but a **free app cannot be changed to paid**.
 
 <p align="center">
   <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/create_app_GPC.png?raw=true" />
@@ -56,7 +56,7 @@ We will start out by creating the app and adding some basic information about it
 
 
 
-Now, that we have created the app we are redirected to the dashboard, where we have access to all of the features and settings provided by the Google Play Console. On the dashboard we can see the `Set up your app` tab which is the first required step to be completed before the app can be published.
+Now, that you have created the app, you will be redirected to the dashboard, which provides easy access to all of the features and settings provided by the Google Play Console. On the dashboard you can see the `Set up your app` tab which is the first required step to be completed before the app can be published.
 
 <p align="center">
   <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/set_up_app_GPC.png?raw=true" />
@@ -64,7 +64,7 @@ Now, that we have created the app we are redirected to the dashboard, where we h
 
 ### App access
 
-In the first step we have to let Google know if all users can access all of the app’s features or if some of them are limited with a registration or some other form of account creation mechanism. Apps with restricted access require a brief description on how all of it's content can be accessed.
+In the first step you will be letting Google know if all users can access all of the app’s features or if some of them are limited with a registration or some other form of account creation mechanism. Apps with restricted access require a brief description on how all of it's content can be accessed.
 
 
 
@@ -75,7 +75,7 @@ Content rating is a short questionnaire about the content of the app. First deve
 
 ### Target audience
 
-In Target audience you have to select the target age groups of your app, but before you can do so the Ads section has to be filled out. This is very simple as we just pick if the app will contain ads or not. Choices in both of these categories will affect what your privacy policy must include.
+In Target audience you have to select the target age groups of your app, but before you can do so the Ads section has to be filled out. This is very simple as you just pick if the app will contain ads or not. Choices in both of these categories will affect what your privacy policy must include.
 
 
 ### News app
@@ -85,12 +85,12 @@ Just a quick confirmation if the app is a news app or not, due to terms of servi
 
 ### Selecting app category
 
-This tab focuses on discoverability of the app. We will be adding a category where the app can be found and tags to help improve organic searching as well as some additional contact information in case there are any additional questions during the review.
+This tab focuses on discoverability of the app. You will be adding a category where the app can be found and tags to help improve organic searching as well as some additional contact information in case there are any additional questions during the review.
 
 
 ### Store listing
 
-This will be the most important part for users. Here we set up the app listings, provide descriptions and screenshots for different screen sizes. There are some very specific requirements for image sizes so make sure to take a look at them before creating the images.
+This will be the most important part for users. Here you set up the app listings, provide descriptions and screenshots for different screen sizes. There are some very specific requirements for image sizes so make sure to take a look at them before creating the images.
 
 <p align="center">
   <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/listing_requirements_GPC.png?raw=true" />
@@ -106,7 +106,7 @@ Once all these steps are done, the app is almost ready to be published. Google a
   <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/publish_app_GPC.png?raw=true" />
 </p>
 
-First off, you will have select countries where the app will be available. Then, we will be returning back to Android Studio to generate a signed apk or Android app bundle. 
+First off, you will have select countries where the app will be available. Then, you will be returning back to Android Studio to generate a signed apk or Android app bundle. 
 
 Android app bundles are preferred over apk. Bundles allow Google Play to serve individual apks to users based on their device configuration such as processor architecture or assets depending on the screen resolution.
 
