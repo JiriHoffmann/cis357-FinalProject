@@ -151,10 +151,6 @@ An important note is that Apple charges \$99 yearly, which is much higher than G
 
 Go to: **https://developer.apple.com/**, where you can read more about the benefits of being a developer. Once you are ready hit ***Enroll*** in the upper right corner to get started.
 
-<p align="center">
-  <img src="https://github.com/JiriHoffmann/cis357-FinalProject/blob/main/images/create_account_ASC.png?raw=true" />
-</p>
-
 First off you will have to fill out some basic information. Then, you have to select the entity type and then continue with the membership fee payment.
 
 ### App publishing
